@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Md Abrar Fahim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="navbar-inner">
+        <a class="navbar-brand" href="index.html">Md Abrar Fahim</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h1>Projects</h1>
+        <p class="lead">A selection of projects that show my approach to problem-solving, documentation, and technical work.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Web & IT-related Projects</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Web Application for Garments Business</h3>
+                <span>HTML · PHP · MySQL · SQL</span>
+                <ul>
+                    <li>Developed a web application to input and store customer, order, and financial information.</li>
+                    <li>Designed relational database tables and queries using MySQL.</li>
+                    <li>Gathered feedback from ~50 test users; over 90% responded positively.</li>
+                </ul>
+                <div class="chip-row">
+                    <span class="chip">Web Development</span>
+                    <span class="chip">Database Design</span>
+                    <span class="chip">User Feedback</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Autonomous Vehicle with Computer Vision</h3>
+                <span>Raspberry Pi · Arduino · OpenCV · C/C++</span>
+                <ul>
+                    <li>Built an autonomous vehicle capable of object detection and navigation.</li>
+                    <li>Configured communication between Raspberry Pi and Arduino using I2C.</li>
+                    <li>Debugged hardware and software integration issues during development.</li>
+                </ul>
+                <div class="chip-row">
+                    <span class="chip">Embedded Systems</span>
+                    <span class="chip">Troubleshooting</span>
+                    <span class="chip">Teamwork</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Radar-based Speed Sensor Prototype</h3>
+                <span>STM32 · LTspice · Microcontrollers</span>
+                <ul>
+                    <li>Collaborated to build a radar speed sensor using STM32 microcontroller.</li>
+                    <li>Designed and simulated op-amp circuits to meet specs.</li>
+                    <li>Sensor achieved >92% accuracy in speed measurements.</li>
+                </ul>
+                <div class="chip-row">
+                    <span class="chip">Hardware Debugging</span>
+                    <span class="chip">Circuit Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 2rem;">
+        <h2 class="section-title">Data & Machine Learning Projects</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Audio Detection using Supervised and Unsupervised Learning</h3>
+                <span>PyTorch · Machine Learning · Data Analysis</span>
+                <ul>
+                    <li>Designed and implemented convolutional models for audio event detection.</li>
+                    <li>Evaluated results using confusion matrices and t-SNE visualisation.</li>
+                    <li>Supervised model achieved 57.1% accuracy with lower misclassification rate.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Noise Mitigation in Acoustic Signals</h3>
+                <span>MATLAB · Neural Networks · Signal Processing</span>
+                <ul>
+                    <li>Developed a feed-forward neural network to denoise acoustic signals.</li>
+                    <li>Achieved test MSE of 0.005, outperforming classical filter approaches.</li>
+                    <li>Results applied to spectroscopy and signal fidelity scenarios.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Natural Language Processing Project</h3>
+                <span>BERT · Django · Data Analysis</span>
+                <ul>
+                    <li>Implemented a BERT-based model for sequence classification.</li>
+                    <li>Deployed via Django so the model could be accessed over the web.</li>
+                    <li>Endpoint failure rate around 1% during testing.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © <span id="year"></span> Md Abrar Fahim · Projects
+</footer>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
